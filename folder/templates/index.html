@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <title>Students</title>
+</head>
+<body>
+    <main>
+        <h1>{{name}}</h1>
+        <form action="" method="post">
+            <h2>Add students</h2>
+            <input type="text" name="name" placeholder="Student name"> 
+            <input type="text" name="gender" placeholder="Student lastname">
+            <input type="text" name="age" placeholder="Student age">
+            <input type="number" name="grade" placeholder="Test">
+            <button type="submit">Send</button>
+
+        </form>
+        <form method="post">
+            <input type="text" name="form_type" value="search_student">
+            name: <input type="text" name="sname" id="sname" required><br>
+            <button type="submit">submit</button>
+        </form>
+        grade: {% if grade is not none %}{{ grade }}{% endif %}
+        <hr>
+        <h2>Statistic</h2>
+        number of students: {{ countstu }}
+        <br>
+        <br>
+        
+        <section class="stats">
+            <div class="statistic">
+                <H2>Statistic</H2>
+                
+                <p>Total: {{countstu}}</p>
+                <p>Average Grade: {{srednia}}  </p>
+                <p>Total: {{excellent}}</p>
+                <p>Average Grade: {{fail}}  </p>
+                <p>Total: {{highest}}</p>
+                <p>Average Grade: {{lowest}}  </p>
+            </div>
+            <details>
+                <summary>show list of people</summary>
+                <ul>
+                    {% for student in students %}
+                        <div class="student">
+                            <span>{{ student.firstname }} {{ student.lastname }} <br> ({{ student.age }} Year old)</span>
+                            <span>{{ student.test }}</span>
+                        </div>
+                    {% endfor %}
+                </ul>
+            </details>
+
+        </section>
+    </main>
+</body>
+</html>

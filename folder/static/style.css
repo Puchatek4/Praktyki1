@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: beige;
+    box-shadow: 5px 5px 5px  rgba(173, 173, 173, 0.582);
+    padding: 50px;
+    width: 500px;
+    border-radius: 44px;
+}
+input{
+    box-sizing: border-box;
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    padding: 0 40px;
+}
+button{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+}
+li{
+    padding: 10px;
+    background-color: beige;
+    width: 350px;
+    margin: 10px;
+    border: 2px black solid;
+    border-radius: 400px;
+    list-style-type: none;
+    position: relative;
+
+}
+.stats{
+    display: flex;
+    position: relative;
+    top: 350px;
+    margin-bottom: 100px;
+}
+.statistic{
+    background-color: aquamarine;
+    margin: 20px;
+    width: 500px;
+    height: 300px;
+}
+details{
+    height: 50px;
+    padding: 30px;
+    border: 2px black solid;
+    background-color: beige;
+    width: 300px;
+    font-size: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px  rgba(173, 173, 173, 0.582);
+}
+details::marker{
+    color: red;
+}
+.student {
+    background: #f5f3e5;
+    border: 2px solid #222;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
