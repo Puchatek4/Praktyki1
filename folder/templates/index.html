@@ -27,8 +27,6 @@
         </form>
         grade: {% if grade is not none %}{{ grade }}{% endif %}
         <hr>
-        <h2>Statistic</h2>
-        number of students: {{ countstu }}
         <br>
         <br>
         
@@ -36,12 +34,12 @@
             <div class="statistic">
                 <H2>Statistic</H2>
                 
-                <p>Total: {{countstu}}</p>
+                <p>Total User: {{countstu}}</p>
                 <p>Average Grade: {{srednia}}  </p>
-                <p>Total: {{excellent}}</p>
-                <p>Average Grade: {{fail}}  </p>
-                <p>Total: {{highest}}</p>
-                <p>Average Grade: {{lowest}}  </p>
+                <p>Excellent: {{excellent}}</p>
+                <p>Fail: {{fail}}  </p>
+                <p>Highest: {{highest}}</p>
+                <p>Lowest: {{lowest}}  </p>
             </div>
             <details>
                 <summary>show list of people</summary>
